@@ -1,0 +1,44 @@
+
+### Create User
+POST http://localhost:3001/auth/signup
+Content-Type: application/json
+
+{
+    "email": "abc2@example.com",
+    "password": "1234"
+}
+ 
+### find user with spesfic id
+GET http://localhost:3001/auth/7
+
+### find all users with same email
+GET http://localhost:3001/auth?email=abc@example.com
+
+### delete user by id
+DELETE http://localhost:3001/auth/10
+
+### Update user
+PATCH http://localhost:3001/auth/11
+Content-Type: application/json
+
+{
+    "email": "abcd@example.com"
+}
+
+### signin User
+POST http://localhost:3001/auth/signin
+Content-Type: application/json
+
+{
+    "email": "abc2@example.com",
+    "password": "1234"
+}
+
+
+### get me
+GET http://localhost:3001/auth/getme
+ 
+
+### sign out
+POST http://localhost:3001/auth/signout
+ 

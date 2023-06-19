@@ -1,0 +1,26 @@
+### Create report
+POST http://localhost:3001/reports
+Content-Type: application/json
+
+{
+    "price": 488000,
+    "make": "ford",
+    "model": "ford1",
+    "year": 1978,
+    "mileage": 70000,
+    "lng": 0,
+    "lat": 0
+} 
+
+### approve report
+PATCH  http://localhost:3001/reports/10
+Content-Type: application/json
+
+{
+    "isApprove": true
+} 
+
+### Get estmate 
+GET  http://localhost:3001/reports/?make=ford&model=ford1&year=1990&mileage=1500&lat=0&lng=0
+
+
